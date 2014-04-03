@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Index of records</title>
+  <script type="text/javascript" src="script/jquery-latest.js"></script>
+  <script type="text/javascript" src="script/jquery.tablesorter.min.js"></script>
+  <link rel="stylesheet" href="script/style.css" type="text/css" media="print, projection, screen" />
+  <link rel="stylesheet" href="script/jq.css" type="text/css" media="print, projection, screen" />
+  <script type="text/javascript">
+    $(document).ready(function() 
+      { 
+        $("#myTable").tablesorter(); 
+       } 
+     ); 
+
+  </script>
+
+</head>
+
+<body>
+
+<h1>Index of records</h1>
+<p>The table is sortable -- click on headers.</p>
+
+<table id="myTable" class="tablesorter">
+<thead>
+  <tr>
+    <th>Ref</th>
+    <th>Item</th>
+    <th>RM</th>
+  </tr>
+</thead>
+<tbody>

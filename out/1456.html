@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>My record</title>
+  <script type="text/javascript" src="../script/jquery-latest.js"></script>
+  <script type="text/javascript" src="../script/jquery.tablesorter.min.js"></script>
+  <link rel="stylesheet" href="../script/style.css" type="text/css" media="print, projection, screen" />
+  <link rel="stylesheet" href="../script/jq.css" type="text/css" media="print, projection, screen" />
+  <script type="text/javascript">
+    $(document).ready(function() 
+      { 
+        $("#myTable").tablesorter(); 
+       } 
+     ); 
+
+  </script>
+
+</head>
+
+<body>
+
+<h1>File transactions record</h1>
+<p>The table below is sortable -- click on the header.</p>
+
+<h3>Note to self</h3>
+<p>Would be great to link from here to scanned images of bills, etc.</p>
+
+<table id="myTable" class="tablesorter">
+<thead>
+  <tr>
+    <th>Date</th>
+    <th>Description</th>
+    <th>RM</th>
+  </tr>
+</thead>
+<tbody><tr><td>2013-07-29</td>
+<td>Car Wash</td>
+<td>10</td>
+</tr><tr><td>2015-01-02</td>
+<td>Baju Baru</td>
+<td>200</td>
+</tr></tbody>
+</table>
+</body>
+</html>

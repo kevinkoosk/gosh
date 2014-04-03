@@ -1,0 +1,42 @@
+<head>
+ <title>GO.sh documentation</title>
+
+</head>
+<body></body>
+<h1><em>GO.sh:</em> Simple Accounting using HAML and CSV</h1>
+<h2>Description</h2>
+<ol>
+<li>Simple accounting for my personal use. Generates HTML from HAML and CSV.</li>
+<li>Individual records are stored in <em>CSV</em> and <em>HAML</em> files. They must be in same directory. <em>CSV</em> file contains transactions. <em>HAML</em> file contains client's record (long content possible).</li>
+<li>Client's name is in first line of HAML file. First line should be something like <em>~CLIENT'S NAME</em>. The client's name comes after the <strong>tilde (~)</strong>.</li>
+</ol>
+<h3>Usage</h3><pre>./GO.sh directory_containing_data</pre>
+
+<ol>
+ <li>If records are in <i>example</i> directory, the command to process them is:   <pre>./GO.sh example</pre>
+
+</li>
+ <li><i>GO.sh</i> will generate <i>table.html</i> and new files in <i>out</i>. To distribute the generated files, copy <i>table.html</i>, <i>out</i> directory and <i>script</i> directory.</li>
+
+ <li>Keep different sets of data in their own directories, e.g.  <ul>
+   <li><i>office_accounts</i> = for office accounts</li>
+   <li><i>house_expenses</i> = for household expenses.</li>
+
+  </ul>
+</li>
+ <li>To view records in web browser, enter:   <pre>./GO.sh example</pre>
+   <pre>firefox table.html</pre>
+
+</li>
+ <li>You can view the generated files anywhere using: (a) <i>table.html</i> and (b) two directories of <i>out</i> and <i>script</i>.</li>
+
+</ol>
+<h3>Notes</h3>
+<ol>
+<li>Contents of <em>out</em> will be deleted everytime <em>GO.sh</em> is run.</li>
+<li><em>GO.sh</em> uses Linux, Python and the HamlPy package.</li>
+<li>Banks do <em>end of day</em> processing, so take a hint. You only need to regenerate HTML as needed.</li>
+<li>Records are managed by editing CSV and HAML.</li>
+</ol>
+<h4>About this project</h4>
+<p>Hacked together by Kevin Koo Seng Kiat from Kuala Lumpur. Reach me on Twitter at <a href="http://www.twitter.com/kevinkoosk">@kevinkoosk</a></p>
